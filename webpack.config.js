@@ -1,0 +1,46 @@
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
+
+var webpack = require('webpack');
+var path = require('path');
+
+var BUILD_DIR = path.resolve(__dirname, 'src/client/public');
+var APP_DIR = path.resolve(__dirname, 'src/client/app');
+
+var config = {
+    entry: APP_DIR + '/index.jsx',
+    output: {
+        path: BUILD_DIR,
+        filename: 'assets/bundle.js'
+    },
+    module: {
+        loaders: [
+            {
+                test: /\.jsx?/,
+                include: APP_DIR,
+                loader: 'babel'
+            },
+            {
+                test: /\.css$/,
+                loader: ExtractTextPlugin.extract(
+                    'style-loader',
+                    'css-loader'
+                )
+            },
+            { test: /\.png$/, loader: "url-loader?limit=100000" },
+            { test: /\.jpg$/, loader: "file-loader" }
+        ]
+    },
+
+    plugins: [
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            React: 'react',
+            vis: 'vis'
+        }),
+        new ExtractTextPlugin('assets/bundle.css')
+    ]
+};
+
+module.exports = config;
+

@@ -1,0 +1,91 @@
+[
+	{
+		"id": 1,
+		"type": "node",
+		"label": "Matt's node",
+		"subnet": "8.0.0.0/8",
+		"peering": [2]
+	},
+	{
+		"id": 2,
+		"type": "isp",
+		"label": "Matt's ISP",
+		"peering": [3, 4]
+	},
+	{
+		"id": 3,
+		"type": "ixp",
+		"label": "AMS-IX"
+	},
+	{
+		"id": 4,
+		"type": "ixp",
+		"label": "MSK-IX"
+	},
+	{
+		"id": 5,
+		"type": "ixp",
+		"label": "EURO-IX"
+	},
+	{
+		"id": 6,
+		"type": "isp",
+		"label": "Ed's ISP",
+		"peering": [5]
+	},
+	{
+		"id": 7,
+		"type": "node",
+		"label": "Ed's subnet",
+		"subnet": "9.0.0.0/8",
+		"peering": [6]
+	},
+	{
+		"id": 8,
+		"type": "node",
+		"label": "Netflix",
+		"subnet": "10.0.0.0/8",
+		"peering": [9]
+	},
+	{
+		"id": 9,
+		"type": "isp",
+		"label": "Netflix ISP",
+		"peering": [3, 2]
+	},
+	{
+		"id": 10,
+		"type": "node",
+		"label": "Netflix New",
+		"subnet": "11.0.0.0/8",
+		"peering": [9]
+	},
+	{
+		"id": 11,
+		"type": "node",
+		"label": "Netflix Old",
+		"subnet": "12.0.0.0/8",
+		"peering": [9]
+	},
+	{
+		"id": 12,
+		"type": "node",
+		"label": "Ed's subnet #2",
+		"subnet": "18.0.0.0/8",
+		"peering": [6]
+	},
+	{
+		"id": 13,
+		"type": "node",
+		"label": "Matt's subnet #2",
+		"subnet": "19.0.0.0/8",
+		"peering": [2]
+	},
+	{
+		"id": 14,
+		"type": "node",
+		"label": "Matt's subnet #3",
+		"subnet": "20.0.0.0/8",
+		"peering": [2]
+	}
+]
