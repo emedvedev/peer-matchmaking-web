@@ -18,8 +18,7 @@ h1 {
   font-size: 38px;
   margin-top: 0;
   padding-top: 28px;
-  width: 980px;
-  margin: 0 auto 28px;
+  margin: 0 50px 28px;
 }
 /*
 h1:after {
@@ -40,10 +39,9 @@ p.large {
 footer {
   padding: 20px 0;
   position: absolute;
-  left: 50%;
-  margin-left: -480px;
-  bottom: 0;
-  width: 960px;
+  bottom: 2px;
+  left: 50px;
+  right: 50px;
 }
 footer ul {
   position: absolute;

@@ -39,7 +39,8 @@ var config = {
             $: 'jquery',
             jQuery: 'jquery',
             React: 'react',
-            vis: 'vis'
+            vis: 'vis',
+            _: 'lodash'
         }),
         new ExtractTextPlugin('assets/bundle.css')
     ]

@@ -4,41 +4,49 @@
 		"type": "node",
 		"label": "Matt's node",
 		"subnet": "8.0.0.0/8",
-		"peering": [2]
+		"peering": [2],
+		"source": true
 	},
 	{
 		"id": 2,
 		"type": "isp",
 		"label": "Matt's ISP",
+		"peering": [15, 3],
+		"source": true
+	},
+	{
+		"id": 15,
+		"type": "isp",
+		"label": "Expensive ISP",
 		"peering": [3, 4]
 	},
 	{
 		"id": 3,
 		"type": "ixp",
-		"label": "AMS-IX"
+		"label": "KITTEN-IX"
 	},
 	{
 		"id": 4,
 		"type": "ixp",
-		"label": "MSK-IX"
+		"label": "KIMJONGUN-IX"
 	},
 	{
 		"id": 5,
 		"type": "ixp",
-		"label": "EURO-IX"
+		"label": "ASGARD-IX"
 	},
 	{
 		"id": 6,
 		"type": "isp",
 		"label": "Ed's ISP",
-		"peering": [5]
+		"peering": [5, 3]
 	},
 	{
 		"id": 7,
 		"type": "node",
 		"label": "Ed's subnet",
 		"subnet": "9.0.0.0/8",
-		"peering": [6]
+		"peering": [16]
 	},
 	{
 		"id": 8,
@@ -51,7 +59,7 @@
 		"id": 9,
 		"type": "isp",
 		"label": "Netflix ISP",
-		"peering": [3, 2]
+		"peering": [3]
 	},
 	{
 		"id": 10,
@@ -72,7 +80,7 @@
 		"type": "node",
 		"label": "Ed's subnet #2",
 		"subnet": "18.0.0.0/8",
-		"peering": [6]
+		"peering": [16]
 	},
 	{
 		"id": 13,
@@ -87,5 +95,202 @@
 		"label": "Matt's subnet #3",
 		"subnet": "20.0.0.0/8",
 		"peering": [2]
+	},
+
+
+	{
+		"id": 16,
+		"type": "isp",
+		"label": "New",
+		"peering": [6]
+	},
+	{
+		"id": 17,
+		"type": "node",
+		"label": "1 New",
+		"subnet": "110.0.0.0/8",
+		"peering": [16]
+	},
+	{
+		"id": 18,
+		"type": "node",
+		"label": "2 Old",
+		"subnet": "111.0.0.0/8",
+		"peering": [16]
+	},
+
+
+	{
+		"id": 19,
+		"type": "isp",
+		"label": "New",
+		"peering": [5]
+	},
+	{
+		"id": 20,
+		"type": "node",
+		"label": "1 New",
+		"subnet": "120.0.0.0/8",
+		"peering": [19]
+	},
+	{
+		"id": 21,
+		"type": "node",
+		"label": "2 Old",
+		"subnet": "121.0.0.0/8",
+		"peering": [19]
+	},
+	{
+		"id": 22,
+		"type": "node",
+		"label": "2 Old",
+		"subnet": "122.0.0.0/8",
+		"peering": [19]
+	},
+
+
+	{
+		"id": 23,
+		"type": "isp",
+		"label": "2 Old",
+		"subnet": "122.0.0.0/8",
+		"peering": [4]
+	},
+	{
+		"id": 24,
+		"type": "node",
+		"label": "2 Old",
+		"subnet": "184.19.2.1/32",
+		"peering": [23]
+	},
+
+	{
+		"id": 25,
+		"type": "node",
+		"label": "Netflix",
+		"subnet": "25.0.0.0/8",
+		"peering": [26]
+	},
+	{
+		"id": 26,
+		"type": "isp",
+		"label": "Netflix ISP",
+		"peering": [3]
+	},
+	{
+		"id": 27,
+		"type": "node",
+		"label": "Netflix New",
+		"subnet": "23.0.0.0/8",
+		"peering": [26]
+	},
+	{
+		"id": 28,
+		"type": "node",
+		"label": "Netflix Old",
+		"subnet": "24.0.0.0/8",
+		"peering": [26]
+	},
+
+
+	{
+		"id": 29,
+		"type": "isp",
+		"label": "New",
+		"peering": [5]
+	},
+	{
+		"id": 30,
+		"type": "isp",
+		"label": "New",
+		"peering": [29]
+	},
+	{
+		"id": 31,
+		"type": "node",
+		"label": "1 New",
+		"subnet": "220.0.0.0/8",
+		"peering": [30]
+	},
+	{
+		"id": 32,
+		"type": "node",
+		"label": "2 Old",
+		"subnet": "221.0.0.0/8",
+		"peering": [30]
+	},
+	{
+		"id": 33,
+		"type": "node",
+		"label": "2 Old",
+		"subnet": "222.0.0.0/8",
+		"peering": [30]
+	},
+
+
+
+	{
+		"id": 34,
+		"type": "node",
+		"label": "Netflix",
+		"subnet": "154.0.0.0/8",
+		"peering": [35]
+	},
+	{
+		"id": 35,
+		"type": "isp",
+		"label": "Netflix ISP",
+		"peering": [3]
+	},
+	{
+		"id": 36,
+		"type": "node",
+		"label": "Netflix New",
+		"subnet": "155.0.0.0/8",
+		"peering": [35]
+	},
+
+
+
+
+	{
+		"id": 37,
+		"type": "node",
+		"label": "Netflix",
+		"subnet": "178.0.0.0/8",
+		"peering": [39]
+	},
+	{
+		"id": 38,
+		"type": "isp",
+		"label": "Netflix ISP",
+		"peering": [3]
+	},
+	{
+		"id": 39,
+		"type": "isp",
+		"label": "Netflix ISP",
+		"peering": [38]
+	},
+	{
+		"id": 40,
+		"type": "node",
+		"label": "Netflix New",
+		"subnet": "175.0.0.0/8",
+		"peering": [39]
+	},
+	{
+		"id": 41,
+		"type": "node",
+		"label": "Netflix New",
+		"subnet": "174.0.0.0/8",
+		"peering": [39]
+	},
+	{
+		"id": 42,
+		"type": "node",
+		"label": "Netflix New",
+		"subnet": "173.0.0.0/8",
+		"peering": [39]
 	}
 ]

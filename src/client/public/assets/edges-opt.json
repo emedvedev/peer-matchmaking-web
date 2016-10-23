@@ -1,0 +1,89 @@
+[
+	{
+		"pair": [1, 2],
+		"traffic": 40
+	},
+	{
+		"pair": [13, 2],
+		"traffic": 40
+	},
+	{
+		"pair": [14, 2],
+		"traffic": 40
+	},
+	{
+		"pair": [2, 3],
+		"traffic": 120
+	},
+	{
+		"pair": [9, 3],
+		"traffic": 120
+	},
+	{
+		"pair": [9, 8],
+		"traffic": 120
+	},
+
+
+	{
+		"pair": [1, 2],
+		"traffic": 10
+	},
+	{
+		"pair": [2, 3],
+		"traffic": 10
+	},
+	{
+		"pair": [3, 28],
+		"traffic": 10
+	},
+
+
+	{
+		"pair": [1, 2],
+		"traffic": 20
+	},
+	{
+		"pair": [13, 2],
+		"traffic": 20
+	},
+	{
+		"pair": [14, 2],
+		"traffic": 20
+	},
+	{
+		"pair": [2, 3],
+		"traffic": 60
+	},
+	{
+		"pair": [35, 3],
+		"traffic": 60
+	},
+	{
+		"pair": [36, 35],
+		"traffic": 60
+	},
+
+
+
+	{
+		"pair": [13, 2],
+		"traffic": 20
+	},
+	{
+		"pair": [2, 15],
+		"traffic": 20
+	},
+	{
+		"pair": [15, 4],
+		"traffic": 20
+	},
+	{
+		"pair": [23, 24],
+		"traffic": 20
+	},
+	{
+		"pair": [23, 4],
+		"traffic": 20
+	}
+]

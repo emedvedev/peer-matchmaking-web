@@ -11,7 +11,7 @@
   "author": "Ed Medvedev",
   "license": "ISC",
   "dependencies": {
-
+    "lodash": "^4.16.4"
   },
   "devDependencies": {
     "css-loader": "^0.25.0",
